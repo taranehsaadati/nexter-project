@@ -1,0 +1,43 @@
+$color-primary:#c69963;
+$color-primary-dark:#B28451;
+
+
+$color-secondary:#101d2c;
+
+$color-gray-light-1:#f9f7f6;
+$color-gray-light-2:#aaa;
+
+
+$color-gray-dark-1:#54483A;
+$color-gray-dark-2:#6D5D4B;
+
+
+
+*,
+*::after,
+*::before{
+box-sizing:inherit;
+padding:0;
+margin:0;
+}
+html{
+box-sizing:border-box;
+font-size:62.5%; //10px/16px=62.5% 1rem=10px
+}
+body{
+    font-size:1.6rem;
+    font-family:"JosefinSans-Italic.ttf";
+    font-weight:300;
+    color:$color-gray-dark-2;
+
+}
+.container{
+  display:grid;
+  grid-template-rows:80vh min-content  40vw  repeat( 3 ,min-content);
+}
+ 
+@font-face {
+  font-family: "JosefinSans-Italic.ttf";
+  src:url(../font/JosefinSans-Italic.ttf)
+
+ } 

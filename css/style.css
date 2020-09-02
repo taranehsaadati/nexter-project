@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "JosefinSans-Italic.ttf";
+  font-weight: 300;
+  color: #6D5D4B; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content); }
+
+@font-face {
+  font-family: "JosefinSans-Italic.ttf";
+  src: url(../font/JosefinSans-Italic.ttf); }
+
+.features {
+  background-color: #aaa; }
+
+.footer {
+  background-color: #101d2c; }
+
+.gallery {
+  background-color: #aaa; }
+
+.header {
+  background-color: #c69963; }
+
+.home {
+  background-color: #54483A; }
+
+.realtors {
+  background-color: #101d2c; }
+
+.sidebar {
+  background-color: #B28451; }
+
+.story__picture {
+  background-color: #c69963; }
+
+.story__content {
+  background-color: #B28451; }

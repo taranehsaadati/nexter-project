@@ -1,0 +1,31 @@
+{
+  "name": "nexter",
+  "version": "1.0.0",
+  "description": "nexter website",
+  "main": "index.js",
+  "scripts": {
+    "whatch:sass": "node-sass  sass/main.scss css/style.css -w ",
+    "compile:sass":"node-sass sass/main.scss  css/style.comp.css",
+    "devserver":"live-server --browser=firefox",
+    "start":"npm-run-all --parallel devserver whatch:sass",
+
+    "autoprefix:css":" postcss --use autoprefixer   -b \"last 10 versions\"  css/style.comp.css -o css/style.prefix.css ",
+    "compress:css":"node-sass  css/style.prefix.css  css/style.css --output-style compressed",
+     "build-process":"npm-run-all autoprefix:css  compress:css"
+  },
+  "author": "marzieh",
+  "license": "ISC",
+
+  "browserslist": [
+    "last 10 version",
+    "> 1%",
+    "IE 10"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1"
+  }
+ 
+}
