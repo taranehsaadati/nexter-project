@@ -11,7 +11,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "JosefinSans-Italic.ttf";
   font-weight: 300;
   color: #6D5D4B; }
 
@@ -20,15 +19,27 @@ body {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
-@font-face {
-  font-family: "JosefinSans-Italic.ttf";
-  src: url(../font/JosefinSans-Italic.ttf); }
-
 .features {
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 6rem; }
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start; }
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content  1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+  padding: 2rem; }
+  .feature__icon {
+    fill: #c69963;
+    grid-row: 1 / span 2;
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translateY(-1rem); }
+  .feature__text {
+    font-size: 1.5rem; }
 
 .footer {
   background-color: #101d2c;
@@ -61,3 +72,18 @@ body {
 .story__content {
   background-color: #B28451;
   grid-column: col-start 5 / full-end; }
+
+@font-face {
+  font-family: "JosefinSans-SemiBoldItalic.ttf";
+  src: url(../font/JosefinSans-SemiBoldItalic.ttf); }
+
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-weight: 400;
+  font-family: "JosefinSans-SemiBoldItalic.ttf"; }
+
+.heading-4 {
+  font-size: 1.9rem; }
+  .heading-4--light {
+    color: #f9f7f6; }
+  .heading-4--dark {
+    color: #6D5D4B; }

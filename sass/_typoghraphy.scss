@@ -1,0 +1,31 @@
+@font-face{
+    font-family:"JosefinSans-SemiBoldItalic.ttf";
+    src:url(../font/JosefinSans-SemiBoldItalic.ttf);
+}
+%heading{
+    font-weight:400;
+    font-family:"JosefinSans-SemiBoldItalic.ttf";
+}
+.heading-1{
+    @extend %heading;
+
+}
+.heading-2{
+    @extend %heading;
+
+}
+.heading-3{
+    @extend %heading;
+    
+}
+.heading-4{
+    @extend %heading;
+    font-size:1.9rem;
+
+    &--light{
+        color:$color-gray-light-1;
+    }
+    &--dark{
+    color:$color-gray-dark-2;
+    }
+}
