@@ -25,8 +25,10 @@ body {
   src: url(../font/JosefinSans-Italic.ttf); }
 
 .features {
-  background-color: #aaa;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem; }
 
 .footer {
   background-color: #101d2c;
