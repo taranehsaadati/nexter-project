@@ -4,7 +4,26 @@
     grid-column:full-start / col-end 4;
    } 
     &__content{
-        background-color:$color-primary-dark;
+        background-color:$color-gray-light-1;
         grid-column:col-start 5 / full-end;
+        padding:6rem 8vw;
+        display:flex;
+        //flexbox aligment
+        // flex-direction:column;
+        // justify-content:center;
+        // align-items:start;
+         
+
+        ///or gridcss
+        display:grid;
+        align-content:center;
+        justify-items:start;
+
+    }
+    &__text{
+        margin-bottom:6rem;
+        font-style:italic;
+        font-size:1.4rem;
+        line-height:2rem;
     }
     }

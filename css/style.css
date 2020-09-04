@@ -70,16 +70,44 @@ body {
   grid-column: full-start / col-end 4; }
 
 .story__content {
-  background-color: #B28451;
-  grid-column: col-start 5 / full-end; }
+  background-color: #f9f7f6;
+  grid-column: col-start 5 / full-end;
+  padding: 6rem 8vw;
+  display: flex;
+  display: grid;
+  align-content: center;
+  justify-items: start; }
+
+.story__text {
+  margin-bottom: 6rem;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 2rem; }
 
 @font-face {
-  font-family: "JosefinSans-SemiBoldItalic.ttf";
-  src: url(../font/JosefinSans-SemiBoldItalic.ttf); }
+  font-family: "JosefinSans-SemiBold";
+  src: url(../font/Courgette-Regular.ttf); }
+
+@font-face {
+  font-family: "Nunito-Italic";
+  src: url(../font/Nunito-Italic.ttf); }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-weight: 400;
-  font-family: "JosefinSans-SemiBoldItalic.ttf"; }
+  font-family: "JosefinSans-SemiBold"; }
+
+.heading-2 {
+  text-transform: uppercase;
+  font-size: 3rem; }
+  .heading-2--light {
+    color: #f9f7f6; }
+  .heading-2--dark {
+    color: #6D5D4B; }
+
+.heading-3 {
+  color: #c69963;
+  font-size: 1.6rem;
+  text-transform: uppercase; }
 
 .heading-4 {
   font-size: 1.9rem; }
@@ -87,3 +115,26 @@ body {
     color: #f9f7f6; }
   .heading-4--dark {
     color: #6D5D4B; }
+
+.mb-small {
+  margin-bottom: 2rem; }
+
+.mb-medum {
+  margin-bottom: 3rem; }
+
+.mb-larg {
+  margin-bottom: 4rem; }
+
+.mb-larger {
+  margin-bottom: 8rem; }
+
+.btn {
+  border: none;
+  font-size: 1.5rem;
+  background-color: #c69963;
+  padding: 1.8rem 3rem;
+  color: white;
+  font-family: "Nunito-Italic";
+  text-transform: uppercase; }
+  .btn:hover {
+    background-color: #B28451; }

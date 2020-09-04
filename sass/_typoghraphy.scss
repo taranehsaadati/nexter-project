@@ -1,10 +1,14 @@
 @font-face{
-    font-family:"JosefinSans-SemiBoldItalic.ttf";
-    src:url(../font/JosefinSans-SemiBoldItalic.ttf);
+    font-family:"JosefinSans-SemiBold";
+    src:url(../font/Courgette-Regular.ttf);
+}
+@font-face{
+    font-family:"Nunito-Italic";
+    src:url(../font/Nunito-Italic.ttf);
 }
 %heading{
     font-weight:400;
-    font-family:"JosefinSans-SemiBoldItalic.ttf";
+    font-family:"JosefinSans-SemiBold";
 }
 .heading-1{
     @extend %heading;
@@ -12,10 +16,21 @@
 }
 .heading-2{
     @extend %heading;
+    text-transform:uppercase;
+    font-size:3rem;
+    &--light{
+        color:$color-gray-light-1;
+    }
+    &--dark{
+    color:$color-gray-dark-2;
+    }
 
 }
 .heading-3{
     @extend %heading;
+    color:$color-primary;
+    font-size:1.6rem;
+    text-transform:uppercase;
     
 }
 .heading-4{
@@ -28,4 +43,30 @@
     &--dark{
     color:$color-gray-dark-2;
     }
+}
+.mb-small{
+    margin-bottom:2rem;
+}
+.mb-medum{
+    margin-bottom:3rem;
+}
+.mb-larg{
+    margin-bottom:4rem;
+}
+.mb-larger{
+    margin-bottom:8rem;
+}
+.btn{
+    border:none;
+    font-size:1.5rem;
+    background-color:$color-primary;
+    padding:1.8rem 3rem;
+    color:white;
+    font-family:"Nunito-Italic";
+    text-transform:uppercase;
+    &:hover{
+    background-color:$color-primary-dark;;
+
+    }
+
 }
