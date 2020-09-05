@@ -1,4 +1,32 @@
-.home{
-    background-color:$color-gray-dark-1;
+.homes{
     grid-column:center-start /center-end;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+    grid-gap:7rem;
+}
+.home{
+    background-color:$color-gray-light-1;
+    &__img{
+        width:100%;
+    }
+    &__text{
+
+    }
+    &__like{
+    
+    }
+    &__location,
+    &__price,
+    &__room,
+    &__area{
+        svg{
+         fill:$color-primary;
+         width:2rem;
+         height:2rem;
+        }
+
+    p{
+
+    }
+    }
 }
