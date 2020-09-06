@@ -54,19 +54,57 @@ body {
   grid-column: full-start / col-end 6; }
 
 .homes {
-  grid-column: center-start /center-end;
+  grid-column: center-start / center-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem; }
 
 .home {
-  background-color: #f9f7f6; }
+  background-color: #f9f7f6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3.5rem; }
   .home__img {
-    width: 100%; }
-  .home__location svg, .home__price svg, .home__room svg, .home__area svg {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2; }
+  .home__text {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    background-color: #101d2c;
+    align-self: end;
+    justify-self: center;
+    transform: translateY(50%);
+    color: white;
+    font-family: "Courgette-Regular";
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding: 1.5rem;
+    width: 80%;
+    text-align: center; }
+  .home__like {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+    width: 2.5rem;
+    height: 2.5rem;
     fill: #c69963;
-    width: 2rem;
-    height: 2rem; }
+    margin: 1rem; }
+    .home__like:cil {
+      fill: red; }
+  .home__room, .home__location {
+    margin-top: 3rem; }
+  .home__location, .home__price, .home__room, .home__area {
+    justify-self: center;
+    align-self: center;
+    text-align: center; }
+    .home__location svg, .home__price svg, .home__room svg, .home__area svg {
+      fill: #c69963;
+      width: 2rem;
+      height: 2rem; }
+  .home__btn--1 {
+    grid-column: 1 / -1;
+    font-size: 1.4rem !important; }
 
 .realtors {
   background-color: #101d2c;
@@ -111,7 +149,7 @@ body {
   line-height: 2rem; }
 
 @font-face {
-  font-family: "JosefinSans-SemiBold";
+  font-family: "Courgette-Regular";
   src: url(../font/Courgette-Regular.ttf); }
 
 @font-face {
@@ -120,7 +158,7 @@ body {
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-weight: 400;
-  font-family: "JosefinSans-SemiBold"; }
+  font-family: "Courgette-Regular"; }
 
 .heading-2 {
   text-transform: uppercase;

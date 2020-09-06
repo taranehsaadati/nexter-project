@@ -1,5 +1,5 @@
 @font-face{
-    font-family:"JosefinSans-SemiBold";
+    font-family:"Courgette-Regular";
     src:url(../font/Courgette-Regular.ttf);
 }
 @font-face{
@@ -8,7 +8,7 @@
 }
 %heading{
     font-weight:400;
-    font-family:"JosefinSans-SemiBold";
+    font-family:"Courgette-Regular";
 }
 .heading-1{
     @extend %heading;
